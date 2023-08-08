@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StrategyPattern", "Strategy
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FactoryPattern", "FactoryPattern\FactoryPattern.csproj", "{CDC831A4-2F34-47A7-B30D-980B6FCC7EF7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FactoryMethodPattern", "FactoryMethodPattern\FactoryMethodPattern.csproj", "{6AAE76BE-8FEA-4A0A-B82D-60B41E0C0013}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{CDC831A4-2F34-47A7-B30D-980B6FCC7EF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CDC831A4-2F34-47A7-B30D-980B6FCC7EF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CDC831A4-2F34-47A7-B30D-980B6FCC7EF7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6AAE76BE-8FEA-4A0A-B82D-60B41E0C0013}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6AAE76BE-8FEA-4A0A-B82D-60B41E0C0013}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6AAE76BE-8FEA-4A0A-B82D-60B41E0C0013}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6AAE76BE-8FEA-4A0A-B82D-60B41E0C0013}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

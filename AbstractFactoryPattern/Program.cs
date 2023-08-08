@@ -1,7 +1,7 @@
 ﻿using StrategyPattern;
 using static StrategyPattern.Program;
 
-namespace AbstractFactoryPattern
+namespace HybridFactory_StrategyPattern
 {
     public class Program
     {

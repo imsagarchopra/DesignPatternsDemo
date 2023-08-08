@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace HybridFactory_StrategyPattern
+namespace AbstractFactoryPattern
 {
     // The Context Provides the interface which is going to be used by the Client.
     public class PaymentContext

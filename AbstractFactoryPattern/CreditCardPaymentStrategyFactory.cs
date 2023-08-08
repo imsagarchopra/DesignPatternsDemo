@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace HybridFactory_StrategyPattern
+namespace AbstractFactoryPattern
 {
     public class CreditCardPaymentStrategyFactory : PaymentStrategyFactory
     {

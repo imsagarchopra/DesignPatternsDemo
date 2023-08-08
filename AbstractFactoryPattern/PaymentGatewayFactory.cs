@@ -5,19 +5,19 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace FactoryMethodPattern
+namespace AbstractFactoryPattern
 {
-    public abstract class PaymentStrategyFactory
+    public abstract class PaymentGatewayFactory
     {
-        protected abstract IPaymentStrategy MakePaymentStrategy();
+        protected abstract IPaymentGateway MakePaymentGateway();
         // Also note that The Creator's primary responsibility is not creating products. 
         // Usually, it contains some core business logic that relies on Product objects, returned by the factory method. 
-        public IPaymentStrategy CreatePaymentStrategy()
+        public IPaymentGateway CreatePaymentGateway()
         {
             //Call the MakeProduct which will create and return the appropriate object 
-            IPaymentStrategy paymentStrategy = this.MakePaymentStrategy();
+            IPaymentGateway paymentGateway = this.MakePaymentGateway();
             //Return the Object to the Client
-            return paymentStrategy;
+            return paymentGateway;
         }
     }
 }

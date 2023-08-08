@@ -29,17 +29,17 @@ namespace FactoryMethodPattern
                 //Create the Appropriate Payment Strategy Instance and call the SetPaymentStrategy method
                 if (selectedPaymentType == PaymentType.CreditCard)
                 {
-                    paymentStrategy = new CreditCardPaymentStrategyFactory().CreateProduct();
+                    paymentStrategy = new CreditCardPaymentStrategyFactory().CreatePaymentStrategy();
 
                 }
                 else if (selectedPaymentType == PaymentType.DebitCard)
                 {
-                    paymentStrategy = new DebitCardPaymentStrategyFactory().CreateProduct();
+                    paymentStrategy = new DebitCardPaymentStrategyFactory().CreatePaymentStrategy();
 
                 }
                 else if (selectedPaymentType == PaymentType.Cash)
                 {
-                    paymentStrategy = new CashPaymentStrategyFactory().CreateProduct();
+                    paymentStrategy = new CashPaymentStrategyFactory().CreatePaymentStrategy();
                 }
                 else
                 {

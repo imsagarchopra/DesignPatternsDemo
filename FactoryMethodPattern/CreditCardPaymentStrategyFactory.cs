@@ -14,7 +14,7 @@ namespace FactoryMethodPattern
         // The signature of the method uses the abstract product IPaymentStrategy type,
         // Even though the concrete CreditCardPaymentStrategy product is returned from the method.
         // This way the Abstract Creator PaymentStrategyFactory can stay independent of concrete product classes.
-        protected override IPaymentStrategy MakeProduct()
+        protected override IPaymentStrategy MakePaymentStrategy()
         {
             IPaymentStrategy paymentStrategy = new CreditCardPaymentStrategy();
             return paymentStrategy;

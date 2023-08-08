@@ -12,36 +12,51 @@ public class Program
     {
         //Ask the user to Select the Payment Type
         Console.WriteLine("Please Select Payment Type : \n1. CreditCard \n2. DebitCard \n3. Cash");
-        int SelectedPaymentType = Convert.ToInt32(Console.ReadLine());
-        Console.WriteLine("Payment type is : " + SelectedPaymentType);
 
-        Console.WriteLine("\nPlease enter Amount to Pay : ");
-        double Amount = Convert.ToDouble(Console.ReadLine());
-        Console.WriteLine("Amount is : " + Amount);
 
-        //Create an Instance of the PaymentContext class
-        PaymentContext context = new PaymentContext();
-        //Based on the Payment Type Selected by user at Runtime,
-        //Create the Appropriate Payment Strategy Instance and call the SetPaymentStrategy method
-        if (SelectedPaymentType == (int)PaymentType.CreditCard)
+        if (Enum.TryParse(Console.ReadLine(), out PaymentType selectedPaymentType))
         {
-            context.SetPaymentStrategy(new CreditCardPaymentStrategy());
-        }
-        else if (SelectedPaymentType == (int)PaymentType.DebitCard)
-        {
-            context.SetPaymentStrategy(new DebitCardPaymentStrategy());
-        }
-        else if (SelectedPaymentType == (int)PaymentType.Cash)
-        {
-            context.SetPaymentStrategy(new CashPaymentStrategy());
+            Console.WriteLine("Payment type is: " + selectedPaymentType);
+
+            Console.WriteLine("Please enter Amount to Pay:");
+            double amount;
+            while (!double.TryParse(Console.ReadLine(), out amount) || amount <= 0)
+            {
+                Console.WriteLine("Invalid input. Please enter a valid amount:");
+            }
+
+            Console.WriteLine("Amount is: " + amount);
+
+            //Create an Instance of the PaymentContext class
+            PaymentContext context = null;
+
+            //Based on the Payment Type Selected by user at Runtime,
+            //Create the Appropriate Payment Strategy Instance and call the SetPaymentStrategy method
+            if (selectedPaymentType == PaymentType.CreditCard)
+            {
+                 context = new PaymentContext(new CreditCardPaymentStrategy());
+               
+            }
+            else if (selectedPaymentType == PaymentType.DebitCard)
+            {
+                 context = new PaymentContext(new DebitCardPaymentStrategy());
+              
+            }
+            else if (selectedPaymentType == PaymentType.Cash)
+            {
+                 context = new PaymentContext(new CashPaymentStrategy());               
+            }
+            else
+            {
+                Console.WriteLine("Invalid input for payment type.");
+            }
+            
+            context?.Pay(amount);                      
         }
         else
         {
-            Console.WriteLine("You Select an Invalid Option");
-        }
-        //Finally, call the Pay Method
-        context.Pay(Amount);
-        Console.ReadKey();
+            Console.WriteLine("Invalid input for payment type.");
+        }             
     }   
 }
 

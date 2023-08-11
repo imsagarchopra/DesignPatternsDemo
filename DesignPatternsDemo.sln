@@ -25,6 +25,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SingletonPattern_ThreadSafe
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SingletonPattern_ThreadSafe_UsingEagerLoading", "SingletonPattern_ThreadSafe_UsingEagerLoading\SingletonPattern_ThreadSafe_UsingEagerLoading.csproj", "{7AF88697-7A4F-4A4F-8CCB-07D2BE3F7765}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SingletonPattern_ThreadSafe_UsingLazyLoading", "SingletonPattern_ThreadSafe_UsingLazyLoading\SingletonPattern_ThreadSafe_UsingLazyLoading.csproj", "{086B0216-6D74-415B-AE10-B3E48C41C9DB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -75,6 +77,10 @@ Global
 		{7AF88697-7A4F-4A4F-8CCB-07D2BE3F7765}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7AF88697-7A4F-4A4F-8CCB-07D2BE3F7765}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7AF88697-7A4F-4A4F-8CCB-07D2BE3F7765}.Release|Any CPU.Build.0 = Release|Any CPU
+		{086B0216-6D74-415B-AE10-B3E48C41C9DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{086B0216-6D74-415B-AE10-B3E48C41C9DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{086B0216-6D74-415B-AE10-B3E48C41C9DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{086B0216-6D74-415B-AE10-B3E48C41C9DB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

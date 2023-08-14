@@ -27,11 +27,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SingletonPattern_ThreadSafe
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SingletonPattern_ThreadSafe_UsingLazyLoading", "SingletonPattern_ThreadSafe_UsingLazyLoading\SingletonPattern_ThreadSafe_UsingLazyLoading.csproj", "{086B0216-6D74-415B-AE10-B3E48C41C9DB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ObjectAdaptorPattern", "ObjectAdaptorPattern\ObjectAdaptorPattern.csproj", "{AF2E3FCE-7CD5-401F-8DC9-020B0D31010E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ObjectAdaptorPattern", "ObjectAdaptorPattern\ObjectAdaptorPattern.csproj", "{AF2E3FCE-7CD5-401F-8DC9-020B0D31010E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassAdaptorPattern", "ClassAdaptorPattern\ClassAdaptorPattern.csproj", "{6E16BED9-F504-426F-9927-D9A90C2F2FC2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClassAdaptorPattern", "ClassAdaptorPattern\ClassAdaptorPattern.csproj", "{6E16BED9-F504-426F-9927-D9A90C2F2FC2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FacadePattern", "FacadePattern\FacadePattern.csproj", "{77266D4E-E805-4B20-A5D4-C73316B6185C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FacadePattern", "FacadePattern\FacadePattern.csproj", "{77266D4E-E805-4B20-A5D4-C73316B6185C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DecoratorPattern", "DecoratorPattern\DecoratorPattern.csproj", "{74AA6D57-17C2-4843-94A2-1381D7B730F0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -99,6 +101,10 @@ Global
 		{77266D4E-E805-4B20-A5D4-C73316B6185C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{77266D4E-E805-4B20-A5D4-C73316B6185C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{77266D4E-E805-4B20-A5D4-C73316B6185C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{74AA6D57-17C2-4843-94A2-1381D7B730F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{74AA6D57-17C2-4843-94A2-1381D7B730F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{74AA6D57-17C2-4843-94A2-1381D7B730F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{74AA6D57-17C2-4843-94A2-1381D7B730F0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

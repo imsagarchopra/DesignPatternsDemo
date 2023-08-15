@@ -20,6 +20,8 @@ namespace CompositePattern
             this.childComponents = childComponents;
         }
 
+        //I am not using below methods to add components, instead I am using constructor to construct the composite. Because we are trying to avoid mutation here and keep our solution immutable
+        
         //The following Method is used to add Child Components inside the Composite Component
         //public void AddComponent(Component NewComponent)
         //{
